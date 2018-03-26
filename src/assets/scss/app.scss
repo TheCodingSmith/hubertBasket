@@ -11,6 +11,8 @@
 .portfolio {
 	@import 'partials/imageSlide';
 	@import 'partials/index';
+	@import 'partials/heading';
+	@import 'partials/subHeading';
 }
 
 @include foundation-global-styles;
