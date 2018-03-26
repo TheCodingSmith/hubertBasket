@@ -1,0 +1,36 @@
+.heading
+  border-top: 1px solid $color-orange
+  height: 75vw
+  background-image: url(../img/apples-bananas-basket-235294.jpg)
+  background-size: cover
+  background-position: center
+  color: $white
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+
+  .row
+    background-color: $color-blue-transparent
+    padding: 15px
+    width: 100%
+    display: flex
+
+.title-bar,
+.top-bar
+  background-color: $color-transparent
+  position: absolute
+  top: 0
+  width: 100%
+
+  .menu-text,
+  .title-bar-title,
+    color: $color-orange
+  .menu-icon
+    &::after
+      background: $color-orange
+      box-shadow: 0 7px 0 $color-orange, 0 14px 0 $color-orange
+
+.top-bar
+  .dropdown
+    background-color: $color-transparent
