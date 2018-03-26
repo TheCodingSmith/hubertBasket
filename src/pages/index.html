@@ -1,16 +1,20 @@
-{{#if data.index}}
-{{#each data.index}}
-	<h1>{{this.Heading}}</h1>
-	<p>{{this.Description}}</p>
+{{> menu}}
+{{> heading}}
 
-	<ul>
-		{{#each this.Subheadings}}
-			<li>{{this.heading}}</li>
-		{{/each}}
-	</ul>
+<div class="column">
 
+	{{#if data.index}}
+	{{#each data.index}}
 
+		{{> imageSlide}}
 
+		{{> subHeadings}}
+	{{/each}}
+	{{/if}}
 
-{{/each}}
-{{/if}}
+	<div class="column">
+		<div class="row small-4 small-offset-4">
+			<a href="#" class="button">CTA</a>
+		</div>
+	</div>
+</div>
