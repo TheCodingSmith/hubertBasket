@@ -9,7 +9,8 @@
 @import 'components/overrides';
 
 .portfolio {
-	// @import 'partials/sassfilehere';
+	@import 'partials/imageSlide';
+	@import 'partials/index';
 }
 
 @include foundation-global-styles;
